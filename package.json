@@ -1,0 +1,12 @@
+{
+  "private": true,
+  "dependencies": {
+    "airtable-plus": "^1.0.4",
+    "axios": "^0.19.2",
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.0"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0"
+  }
+}
