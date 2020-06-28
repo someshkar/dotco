@@ -6,11 +6,12 @@
   },
   "builds": [
     {
-      "src": "**/*",
-      "use": "@now/node-server",
-      "config": {
-        "maxLambdaSize": "45mb"
-      }
+      "src": "index.js",
+      "use": "@now/node-server"
+    },
+    {
+      "src": "lib/*",
+      "use": "@now/node"
     }
   ],
   "routes": [
