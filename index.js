@@ -16,13 +16,14 @@ app.get('/', async (req, res) => {
 app.get('/gh/:repo', async (req, res) => {
   try {
     const { repo } = req.params
+    const { GITHUB_USERNAME: ghUsername } = process.env
 
     const { ok: repoExists } = await fetch(
-      `https://api.github.com/repos/someshkar/${repo}`
+      `https://api.github.com/repos/${ghUsername}/${repo}`
     )
 
     if (repoExists) {
-      return res.redirect(302, `https://github.com/someshkar/${repo}`)
+      return res.redirect(302, `https://github.com/${ghUsername}/${repo}`)
     }
 
     return res.status(404).send('404')
@@ -35,6 +36,7 @@ app.get('/gh/:repo', async (req, res) => {
 app.get('/*', async (req, res) => {
   try {
     const slug = req.originalUrl.substring(1)
+    console.log(slug)
     const target = await getTarget(slug)
 
     if (target) {
