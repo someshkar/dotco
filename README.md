@@ -11,13 +11,18 @@ cd dotco
 npm i
 ```
 
-2. Fill out the env file
+2. Setup an Airtable document like this -
+![airtable](https://i.imgur.com/g1cSOPW.png)
+
+3. Get your Airtable credentials [here](https://airtable.com/api).
+
+4. Fill out the env file
 ```sh
 cp .env.example .env
 vim .env
 ```
 
-3. Deploy to vercel
+5. Deploy to vercel
 ```sh
 vercel .
 ```
