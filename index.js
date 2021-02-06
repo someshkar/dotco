@@ -36,7 +36,6 @@ app.get('/gh/:repo', async (req, res) => {
 app.get('/*', async (req, res) => {
   try {
     const slug = req.originalUrl.substring(1)
-    console.log(slug)
     const target = await getTarget(slug)
 
     if (target) {
