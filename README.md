@@ -1,6 +1,7 @@
 # dotco
 
 A URL shortener using Airtable and Vercel.
+An CLI for the same can be found at https://github.com/kavin25/airtable-url-cli
 
 ## Setup
 
