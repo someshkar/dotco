@@ -28,7 +28,7 @@ app.get('/gh/:repo', async (req, res) => {
     if (repoExists) {
       return res.redirect(302, `https://github.com/${ghUsername}/${repo}`)
     }
-    let page=fs.readFileSync(__dirname+ '/views/notfound.html', 'utf8').replace("{tochange}");
+    let page=fs.readFileSync(__dirname+ '/views/notfound.html', 'utf8');
     page=page.replace("tochange", "");
     console.log(page); 
     res.status(404).send(page)
