@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      input[name="new_adress"] {
+        width: 300px;
+        border: 0;
+        padding: 8px;
+        outline: 0;
+        border-radius: 4px;
+      }
+
+      input[type="submit"] {
+        border: 0px;
+        margin-top: 8px;
+        padding: 16px;
+        border-radius: 4px;
+        font-weight: 600;
+        text-transform: uppercase;
+        cursor: pointer;
+        background-color: #298bf5;
+        color: #fff;
+      }
+    </style>
+  </head>
+
+  <body
+    style="
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+      font-family: 'Roboto', sans-serif; ;
+    "
+  >
+    <div class="container">
+      <h1>That address <code>tochange</code> was not found</h1>
+      <h2>404 not found</h2>
+
+      <center>
+        <form method="POST">
+          <input
+            name="new_adress"
+            type="text"
+            placeholder="Try Another Address"
+          />
+          <br /><input type="submit" value="Retry with that address" />
+        </form>
+      </center>
+    </div>
+  </body>
+</html>
