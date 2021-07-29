@@ -49,11 +49,21 @@
           <input
             name="new_adress"
             type="text"
+            id="text"
             placeholder="Try Another Address"
-          />
-          <br /><input type="submit" value="Retry with that address" />
+            onkeyup="submitcheck()"/>
+          <br /><input type="submit" id="submit" value="Retry with that address" disabled/>
         </form>
       </center>
     </div>
+    <script>
+      function submitcheck(){
+        if(text.value.length < 0) { 
+          document.getElementById('submit').disabled = true;
+        } else { 
+          document.getElementById('submit').disabled = false; 
+        }
+      }
+    </script>
   </body>
 </html>
