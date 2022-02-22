@@ -1,7 +1,6 @@
 # dotco
 
 A URL shortener using Airtable and Vercel.
-A CLI for the same can be found at https://github.com/kavinvalli/airtable-url-cli
 
 ## Setup
 
@@ -27,3 +26,12 @@ vim .env
 ```sh
 vercel .
 ```
+
+## Extensions
+- [CLI]
+- [Chrome Extension]
+- [Raycast Extension]
+
+[CLI]: https://github.com/kavinvalli/airtable-url-cli
+[Chrome Extension]: https://github.com/kavinvalli/dotco-chrome-extension
+[Raycast Extension]: https://github.com/kavinvalli/dotco-raycast
